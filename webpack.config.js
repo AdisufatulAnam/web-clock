@@ -43,4 +43,14 @@ module.exports = {
             filename: 'index.html',
         }),
     ],
+    //digunakan untuk menghilangkan 
+    mode: 'production',
+    devServer: {
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false,
+            },
+        },
+    },
 }
